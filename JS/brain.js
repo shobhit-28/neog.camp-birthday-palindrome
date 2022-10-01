@@ -34,9 +34,9 @@ btn.addEventListener('click', function () {
         }
 
         if (nextPal(today)[0] < prevPal(today)[0]) {
-            declaration.innerText = 'You missed by ' + nextPal(today)[0] + ', It was on ' + nextPal(today)[1].day + '/' + nextPal(today)[1].month + '/' + nextPal(today)[1].year;
+            declaration.innerText = 'You missed by ' + nextPal(today)[0] + ' days, The nearest palindrome date is ' + nextPal(today)[1].day + '/' + nextPal(today)[1].month + '/' + nextPal(today)[1].year;
         } else {
-            declaration.innerText = 'You missed by ' + prevPal(today)[0] + ', It was on ' + prevPal(today)[1].day + '/' + prevPal(today)[1].month + '/' + prevPal(today)[1].year;
+            declaration.innerText = 'You missed by ' + prevPal(today)[0] + ', The nearest palindrome date is ' + prevPal(today)[1].day + '/' + prevPal(today)[1].month + '/' + prevPal(today)[1].year;
         }
 
     }

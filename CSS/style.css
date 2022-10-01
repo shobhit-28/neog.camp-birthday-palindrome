@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Amita:wght@700&family=Marcellus+SC&family=Xanh+Mono&display=swap');
+
+body{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.heading{
+    font-family: 'Marcellus SC', serif;
+    font-size: 3.2rem;
+    margin-bottom: 0;
+}
+
+.subHead{
+    font-family: 'Amita', cursive;
+    font-style: italic;
+    font-size: 1.5rem;
+}
+
+#date{
+    width: 20%;
+    margin: 1rem auto;
+    height: 2rem;
+    text-align: center;
+    padding: 0.2rem;
+    font-size: 1rem;
+    font-family: 'Xanh Mono', monospace;
+    border-radius: 0.7rem;
+}
+
+.show{
+    width: 15%;
+    margin: 1rem auto;
+    height: 2rem;
+    text-align: center;
+    padding: 0.2rem;
+    font-size: 1rem;
+    font-family: 'Xanh Mono', monospace;
+    border-radius: 0.7rem;
+    cursor: pointer;
+}
+
+.declaration{
+    font-family: 'Xanh Mono', monospace;
+    font-weight: bold;
+}
+
+footer{
+    margin-top: auto;
+}
+
+.footLink{
+    text-decoration: none;
+    margin: auto;
+}
+.footItems{
+    display: inline-block;
+    padding: 1rem 0.5rem;
+    list-style: none;
+}
+.footList{
+    list-style: none;
+    margin-top: 0;
+    margin-top: 0;
+}
+.footCenter{
+    width: 20%;
+    margin-left: 39%;
+    margin-right: 41%;
+}
+.footImg{
+    height: 1.5rem;
+}
+.navHr{
+    display: inline-block;
+    height: 2rem;
+    margin-bottom: 0px;
+    border-bottom-width: 0px;
+    margin-top: 0px;
+    border-top-width: 0px;
+    border-right-width: 0px;
+}
+.footHead{
+    margin-bottom: 0;
+}
