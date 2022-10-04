@@ -7,9 +7,9 @@ let date = document.querySelector('#date');
 let btn = document.querySelector('.show');
 let declaration = document.querySelector('.declaration')
 // let today = {
-//     day: 1,
-//     month: 1,
-//     year: 2014
+//     day: 27,
+//     month: 12,
+//     year: 2172
 // }
 
 
@@ -33,11 +33,17 @@ btn.addEventListener('click', function () {
             year: Number(dateList[0])
         }
 
-        if (nextPal(today)[0] < prevPal(today)[0]) {
-            declaration.innerText = 'You missed by ' + nextPal(today)[0] + ' days, The nearest palindrome date is ' + nextPal(today)[1].day + '/' + nextPal(today)[1].month + '/' + nextPal(today)[1].year;
+        if (formatsCheck(today)) {
+            declaration.innerText = 'yay! Your birthday is palindrome'
         } else {
-            declaration.innerText = 'You missed by ' + prevPal(today)[0] + ', The nearest palindrome date is ' + prevPal(today)[1].day + '/' + prevPal(today)[1].month + '/' + prevPal(today)[1].year;
+            if (nextPal(today)[0] < prevPal(today)[0]) {
+                declaration.innerText = 'You missed by ' + nextPal(today)[0] + ' days, The nearest palindrome date is ' + nextPal(today)[1].day + '/' + nextPal(today)[1].month + '/' + nextPal(today)[1].year;
+            } else {
+                declaration.innerText = 'You missed by ' + prevPal(today)[0] + ', The nearest palindrome date is ' + prevPal(today)[1].day + '/' + prevPal(today)[1].month + '/' + prevPal(today)[1].year;
+            } 
         }
+
+        
 
     }
 
