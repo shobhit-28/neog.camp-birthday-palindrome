@@ -4,7 +4,7 @@
 <h2>
     How to use :-
 </h2>
-- Enter your birthday in the inout field
+- Enter your birthday in the input field
 - Click the button
 - It will show whether the entered date is palindrome or not
 - If the entered date is not palindrome the nearest palindrome date will be displayed
